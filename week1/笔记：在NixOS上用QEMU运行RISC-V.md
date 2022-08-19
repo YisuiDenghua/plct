@@ -35,6 +35,8 @@
 
 在终端里使用 `cd` 命令进入该文件夹。
 
+解压  openeuler-qemu.raw.tar.zst 文件。
+  
 ## 2.2 修改脚本
 
 编辑 `start_vm.sh` 脚本，将其开头的 `#!/bin/bash` 改为 `#!/usr/bin/env bash` 以适应 NixOS 的根目录结构
