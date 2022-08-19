@@ -47,7 +47,7 @@
 chmod +x start_vm.sh
 ```
 
-# 2.3 运行 openEuler
+# 3 运行 openEuler
 
 在终端输入下列命令，稍后 openEuler 的 tty 界面会出现在当前的终端窗口中。
 
