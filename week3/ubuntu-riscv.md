@@ -84,6 +84,37 @@ qemu-system-riscv64 \
 
 切换到串口控制台，等待云初始化（cloud-init）完成，然后使用 `ubuntu:ubuntu` 登录。
 
+在启动之后，会出现如下的信息：
+
+```
+...
+U-Boot menu
+1:       Ubuntu 22.04.1 LTS 5.15.0-1016-generic
+2:       Ubuntu 22.04.1 LTS 5.15.0-1016-generic (rescue target)
+Enter choice: 
+
+```
+
+通常情况下，选择 1 即可。
+
+第一次使用 `ubuntu:ubuntu` 登录时，系统会要求用户修改密码。
+
+```
+...
+[  OK  ] Reached target Cloud-init target.
+
+ubuntu login: ubuntu
+Passwd:
+You are requered to change your password immediately (administrator enforced).
+Current password:
+New password:
+Retype new password
+...
+```
+
+此时，需输入当前密码，回车。随后设置新密码，并验证。
+
+
 ---
 
 参考：https://wiki.ubuntu.com/RISC-V
