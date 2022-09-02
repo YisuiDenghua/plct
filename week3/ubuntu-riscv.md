@@ -21,7 +21,6 @@ tags:
 </h1>
 
 
-
 # RISC-V
 
 从 Ubuntu 20.04 LTS 开始，Ubuntu 为 RISC-V 平台提供 riscv64 架构版本。
