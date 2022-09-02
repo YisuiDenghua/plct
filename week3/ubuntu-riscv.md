@@ -8,7 +8,7 @@ categories:
 author: 
  - 一穂灯花
  - Ubuntu Community
-date: 2022-08-08 07:46:22
+date: 2022-09-03 23:00:00
 tags: 
  - Ubuntu
  - RISC-V
@@ -47,20 +47,20 @@ https://cdimage.ubuntu.com/releases/20.04.4/release/
 apt install qemu-system-misc opensbi u-boot-qemu qemu-utils
 ```
 
-**要启动 Ubuntu 22.04（Jammy）或更新版本的镜像，需从 Ubuntu 22.04 或更新版本的 Ubuntu 宿主机使用 u-boot-qemu 。**
+**要启动 Ubuntu 22.04.1（Jammy）或更新版本的镜像，需从 Ubuntu 22.04 或更新版本的 Ubuntu 宿主机使用 u-boot-qemu 。**
 
 在安装这些软件后，可使用 [HiFive](https://wiki.ubuntu.com/HiFive) 的预安装镜像来启动虚拟机。
 
 首先，解压镜像：
 
 ```bash
-xz -dk ubuntu-22.04-preinstalled-server-riscv64+unmatched.img.xz
+xz -dk ubuntu-22.04.1-preinstalled-server-riscv64+unmatched.img.xz
 ```
 
 > 提示：如果想要一个稍大的磁盘，可以扩充磁盘（文件系统会同时自动地被调整大小）。
 > 
 > ```bash
-> qemu-img resize -f raw ubuntu-22.04-preinstalled-server-riscv64+unmatched.img +5G
+> qemu-img resize -f raw ubuntu-22.04.1-preinstalled-server-riscv64+unmatched.img +5G
 > ```
 
 接下来，使用 OpenSBI 引导器及 u-boot-qemu 来启动虚拟机。一个可行的命令示例如下：
@@ -71,7 +71,7 @@ qemu-system-riscv64 \
 -bios /usr/lib/riscv64-linux-gnu/opensbi/generic/fw_jump.elf \
 -kernel /usr/lib/u-boot/qemu-riscv64_smode/uboot.elf \
 -device virtio-net-device,netdev=eth0 -netdev user,id=eth0 \
--drive file=ubuntu-22.04-preinstalled-server-riscv64+unmatched.img,format=raw,if=virtio
+-drive file=ubuntu-22.04.1-preinstalled-server-riscv64+unmatched.img,format=raw,if=virtio
 ```
 
 其中较为重要的选项是：
