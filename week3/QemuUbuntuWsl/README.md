@@ -8,13 +8,13 @@
 
 # 在 WSL 通过 QEMU 仿真 RISC-V 环境并启动 Ubuntu RISC-V 系统
 
-> 修订日期 2022-08-05
+> 修订日期 2022-09-02
 
 ## 安装必要环境
 
 ### 安装 WSL
 
-推荐使用 `Ubuntu 20.04.4 LTS` 。可单击 [此处](https://docs.microsoft.com/zh-cn/windows/wsl/install) 参阅官方文献。
+推荐使用 `Ubuntu 22.04.1 LTS` 。可单击 [此处](https://docs.microsoft.com/zh-cn/windows/wsl/install) 参阅官方文献。
 
 ### 安装 VNC Viewer
 
