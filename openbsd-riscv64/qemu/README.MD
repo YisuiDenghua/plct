@@ -2,7 +2,10 @@
 
 > 修订日期 2022-09-30
 
-
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/YisuiDenghua/plct/main/openbsd-riscv64/qemu/spl.png" width="200">
+  <br>OpenBSD<br>
+</h1>
 
 ## 安装必要环境
 
